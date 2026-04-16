@@ -1,4 +1,4 @@
-# mcp-mysql-read-only
+# mcp-mysql
 
 A minimal, single-file MCP server that gives LLMs read-only access to a MySQL database.
 
@@ -16,10 +16,10 @@ Paste this into your `.vscode/mcp.json`
 ```json
 {
   "servers": {
-    "mysql-read-only": {
+    "local-mysql": {
       "command": "node",
       "args": [
-        "/Users/admin/personal-projects/mcp-mysql-read-only/dist/server.js"
+        "./packages/mcp-mysql/dist/mcp-mysql.js"
       ],
       "env": {
         "MYSQL_HOST": "localhost",

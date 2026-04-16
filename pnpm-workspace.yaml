@@ -1,3 +1,6 @@
+packages:
+  - "packages/*"
+
 allowBuilds:
   '@j178/prek': true
 minimumReleaseAge: 10080  # 7 days to reduce risk of supply chain attacks
